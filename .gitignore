@@ -1,7 +1,3 @@
 venv
-<<<<<<< HEAD
 *.txt
 src/__pycache__/
-=======
-*.txt
->>>>>>> origin/develop
