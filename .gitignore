@@ -1,0 +1,3 @@
+venv
+*.txt
+src/__pycache__/

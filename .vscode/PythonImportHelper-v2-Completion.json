@@ -1,0 +1,665 @@
+[
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "StringIO",
+        "importPath": "io",
+        "description": "io",
+        "isExtraImport": true,
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "aiohttp",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "aiohttp",
+        "description": "aiohttp",
+        "detail": "aiohttp",
+        "documentation": {}
+    },
+    {
+        "label": "PDFResourceManager",
+        "importPath": "pdfminer.pdfinterp",
+        "description": "pdfminer.pdfinterp",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfinterp",
+        "documentation": {}
+    },
+    {
+        "label": "PDFPageInterpreter",
+        "importPath": "pdfminer.pdfinterp",
+        "description": "pdfminer.pdfinterp",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfinterp",
+        "documentation": {}
+    },
+    {
+        "label": "PDFResourceManager",
+        "importPath": "pdfminer.pdfinterp",
+        "description": "pdfminer.pdfinterp",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfinterp",
+        "documentation": {}
+    },
+    {
+        "label": "PDFPageInterpreter",
+        "importPath": "pdfminer.pdfinterp",
+        "description": "pdfminer.pdfinterp",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfinterp",
+        "documentation": {}
+    },
+    {
+        "label": "TextConverter",
+        "importPath": "pdfminer.converter",
+        "description": "pdfminer.converter",
+        "isExtraImport": true,
+        "detail": "pdfminer.converter",
+        "documentation": {}
+    },
+    {
+        "label": "XMLConverter",
+        "importPath": "pdfminer.converter",
+        "description": "pdfminer.converter",
+        "isExtraImport": true,
+        "detail": "pdfminer.converter",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLConverter",
+        "importPath": "pdfminer.converter",
+        "description": "pdfminer.converter",
+        "isExtraImport": true,
+        "detail": "pdfminer.converter",
+        "documentation": {}
+    },
+    {
+        "label": "TextConverter",
+        "importPath": "pdfminer.converter",
+        "description": "pdfminer.converter",
+        "isExtraImport": true,
+        "detail": "pdfminer.converter",
+        "documentation": {}
+    },
+    {
+        "label": "LAParams",
+        "importPath": "pdfminer.layout",
+        "description": "pdfminer.layout",
+        "isExtraImport": true,
+        "detail": "pdfminer.layout",
+        "documentation": {}
+    },
+    {
+        "label": "LAParams",
+        "importPath": "pdfminer.layout",
+        "description": "pdfminer.layout",
+        "isExtraImport": true,
+        "detail": "pdfminer.layout",
+        "documentation": {}
+    },
+    {
+        "label": "PDFPage",
+        "importPath": "pdfminer.pdfpage",
+        "description": "pdfminer.pdfpage",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfpage",
+        "documentation": {}
+    },
+    {
+        "label": "PDFPage",
+        "importPath": "pdfminer.pdfpage",
+        "description": "pdfminer.pdfpage",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfpage",
+        "documentation": {}
+    },
+    {
+        "label": "PDFPage",
+        "importPath": "pdfminer.pdfpage",
+        "description": "pdfminer.pdfpage",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfpage",
+        "documentation": {}
+    },
+    {
+        "label": "docx2python",
+        "importPath": "docx2python",
+        "description": "docx2python",
+        "isExtraImport": true,
+        "detail": "docx2python",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "Bot",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "Dispatcher",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "types",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "Message",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "ContentType",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "CommandStart",
+        "importPath": "aiogram.dispatcher.filters",
+        "description": "aiogram.dispatcher.filters",
+        "isExtraImport": true,
+        "detail": "aiogram.dispatcher.filters",
+        "documentation": {}
+    },
+    {
+        "label": "executor",
+        "importPath": "aiogram.utils",
+        "description": "aiogram.utils",
+        "isExtraImport": true,
+        "detail": "aiogram.utils",
+        "documentation": {}
+    },
+    {
+        "label": "load_config",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "MistralClient",
+        "importPath": "MIstral",
+        "description": "MIstral",
+        "isExtraImport": true,
+        "detail": "MIstral",
+        "documentation": {}
+    },
+    {
+        "label": "Parser",
+        "importPath": "Filepars",
+        "description": "Filepars",
+        "isExtraImport": true,
+        "detail": "Filepars",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "sys,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys.",
+        "description": "sys.",
+        "detail": "sys.",
+        "documentation": {}
+    },
+    {
+        "label": "PSKeyword",
+        "importPath": "pdfminer.psparser",
+        "description": "pdfminer.psparser",
+        "isExtraImport": true,
+        "detail": "pdfminer.psparser",
+        "documentation": {}
+    },
+    {
+        "label": "PSLiteral",
+        "importPath": "pdfminer.psparser",
+        "description": "pdfminer.psparser",
+        "isExtraImport": true,
+        "detail": "pdfminer.psparser",
+        "documentation": {}
+    },
+    {
+        "label": "LIT",
+        "importPath": "pdfminer.psparser",
+        "description": "pdfminer.psparser",
+        "isExtraImport": true,
+        "detail": "pdfminer.psparser",
+        "documentation": {}
+    },
+    {
+        "label": "PDFParser",
+        "importPath": "pdfminer.pdfparser",
+        "description": "pdfminer.pdfparser",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfparser",
+        "documentation": {}
+    },
+    {
+        "label": "PDFParser",
+        "importPath": "pdfminer.pdfparser",
+        "description": "pdfminer.pdfparser",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfparser",
+        "documentation": {}
+    },
+    {
+        "label": "PDFDocument",
+        "importPath": "pdfminer.pdfdocument",
+        "description": "pdfminer.pdfdocument",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfdocument",
+        "documentation": {}
+    },
+    {
+        "label": "PDFNoOutlines",
+        "importPath": "pdfminer.pdfdocument",
+        "description": "pdfminer.pdfdocument",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfdocument",
+        "documentation": {}
+    },
+    {
+        "label": "PDFDocument",
+        "importPath": "pdfminer.pdfdocument",
+        "description": "pdfminer.pdfdocument",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfdocument",
+        "documentation": {}
+    },
+    {
+        "label": "PDFObjectNotFound",
+        "importPath": "pdfminer.pdftypes",
+        "description": "pdfminer.pdftypes",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdftypes",
+        "documentation": {}
+    },
+    {
+        "label": "PDFValueError",
+        "importPath": "pdfminer.pdftypes",
+        "description": "pdfminer.pdftypes",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdftypes",
+        "documentation": {}
+    },
+    {
+        "label": "PDFStream",
+        "importPath": "pdfminer.pdftypes",
+        "description": "pdfminer.pdftypes",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdftypes",
+        "documentation": {}
+    },
+    {
+        "label": "PDFObjRef",
+        "importPath": "pdfminer.pdftypes",
+        "description": "pdfminer.pdftypes",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdftypes",
+        "documentation": {}
+    },
+    {
+        "label": "resolve1",
+        "importPath": "pdfminer.pdftypes",
+        "description": "pdfminer.pdftypes",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdftypes",
+        "documentation": {}
+    },
+    {
+        "label": "stream_value",
+        "importPath": "pdfminer.pdftypes",
+        "description": "pdfminer.pdftypes",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdftypes",
+        "documentation": {}
+    },
+    {
+        "label": "isnumber",
+        "importPath": "pdfminer.utils",
+        "description": "pdfminer.utils",
+        "isExtraImport": true,
+        "detail": "pdfminer.utils",
+        "documentation": {}
+    },
+    {
+        "label": "q",
+        "importPath": "pdfminer.utils",
+        "description": "pdfminer.utils",
+        "isExtraImport": true,
+        "detail": "pdfminer.utils",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "PDFDevice",
+        "importPath": "pdfminer.pdfdevice",
+        "description": "pdfminer.pdfdevice",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfdevice",
+        "documentation": {}
+    },
+    {
+        "label": "TagExtractor",
+        "importPath": "pdfminer.pdfdevice",
+        "description": "pdfminer.pdfdevice",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfdevice",
+        "documentation": {}
+    },
+    {
+        "label": "CMapDB",
+        "importPath": "pdfminer.cmapdb",
+        "description": "pdfminer.cmapdb",
+        "isExtraImport": true,
+        "detail": "pdfminer.cmapdb",
+        "documentation": {}
+    },
+    {
+        "label": "ImageWriter",
+        "importPath": "pdfminer.image",
+        "description": "pdfminer.image",
+        "isExtraImport": true,
+        "detail": "pdfminer.image",
+        "documentation": {}
+    },
+    {
+        "label": "Config",
+        "kind": 6,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "class Config:\n    def __init__(self, telegram_token: str, mistral_api_key: str):\n        self.telegram_token = telegram_token\n        self.mistral_api_key = mistral_api_key\ndef load_config(file_path: str) -> Config:\n    \"\"\"Загружает конфигурацию из текстового файла.\"\"\"\n    with open(file_path, 'r', encoding='utf-8') as file:\n        lines = [line.strip() for line in file.readlines()]\n    if len(lines) < 2:\n        raise ValueError(\"Invalid config file format\")",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "load_config",
+        "kind": 2,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "def load_config(file_path: str) -> Config:\n    \"\"\"Загружает конфигурацию из текстового файла.\"\"\"\n    with open(file_path, 'r', encoding='utf-8') as file:\n        lines = [line.strip() for line in file.readlines()]\n    if len(lines) < 2:\n        raise ValueError(\"Invalid config file format\")\n    # Возвращаем объект конфигурации с токенами\n    return Config(\n        telegram_token=lines[0],\n        mistral_api_key=lines[1]",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "Parser",
+        "kind": 6,
+        "importPath": "src.Filepars",
+        "description": "src.Filepars",
+        "peekOfCode": "class Parser:\n    \"\"\"Считывает всё, что находится в файле, в виде текста\"\"\"\n    def __init__(self, file_content: bytes, file_type: str):\n        self.file_content = file_content\n        self.file_type = file_type.lower()\n    def read_from_txt(self) -> str:\n        \"\"\"Читает текст из .txt файла\"\"\"\n        try:\n            text = self.file_content.decode('utf-8')\n            logger.info(\"Успешно прочитан .txt файл.\")",
+        "detail": "src.Filepars",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "src.Filepars",
+        "description": "src.Filepars",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass Parser:\n    \"\"\"Считывает всё, что находится в файле, в виде текста\"\"\"\n    def __init__(self, file_content: bytes, file_type: str):\n        self.file_content = file_content\n        self.file_type = file_type.lower()\n    def read_from_txt(self) -> str:\n        \"\"\"Читает текст из .txt файла\"\"\"\n        try:\n            text = self.file_content.decode('utf-8')",
+        "detail": "src.Filepars",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "logger = logging.getLogger(__name__)\n# Загрузка конфигурации и инициализация клиентов\nconfig = load_config('src/1.txt')\nTOKEN = config.telegram_token\nmistral_client = MistralClient(api_key=config.mistral_api_key)\n# Создаем бота и диспетчер\nbot = Bot(token=TOKEN)\ndp = Dispatcher(bot)\n@dp.message_handler(CommandStart())\nasync def command_start_handler(message: Message):",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 5,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "config = load_config('src/1.txt')\nTOKEN = config.telegram_token\nmistral_client = MistralClient(api_key=config.mistral_api_key)\n# Создаем бота и диспетчер\nbot = Bot(token=TOKEN)\ndp = Dispatcher(bot)\n@dp.message_handler(CommandStart())\nasync def command_start_handler(message: Message):\n    \"\"\"Обрабатывает команду /start\"\"\"\n    await message.reply(\"Здарова сталкер!\")",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "TOKEN",
+        "kind": 5,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "TOKEN = config.telegram_token\nmistral_client = MistralClient(api_key=config.mistral_api_key)\n# Создаем бота и диспетчер\nbot = Bot(token=TOKEN)\ndp = Dispatcher(bot)\n@dp.message_handler(CommandStart())\nasync def command_start_handler(message: Message):\n    \"\"\"Обрабатывает команду /start\"\"\"\n    await message.reply(\"Здарова сталкер!\")\n@dp.message_handler(content_types=ContentType.TEXT)",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "mistral_client",
+        "kind": 5,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "mistral_client = MistralClient(api_key=config.mistral_api_key)\n# Создаем бота и диспетчер\nbot = Bot(token=TOKEN)\ndp = Dispatcher(bot)\n@dp.message_handler(CommandStart())\nasync def command_start_handler(message: Message):\n    \"\"\"Обрабатывает команду /start\"\"\"\n    await message.reply(\"Здарова сталкер!\")\n@dp.message_handler(content_types=ContentType.TEXT)\nasync def message_handler(message: Message):",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "bot",
+        "kind": 5,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "bot = Bot(token=TOKEN)\ndp = Dispatcher(bot)\n@dp.message_handler(CommandStart())\nasync def command_start_handler(message: Message):\n    \"\"\"Обрабатывает команду /start\"\"\"\n    await message.reply(\"Здарова сталкер!\")\n@dp.message_handler(content_types=ContentType.TEXT)\nasync def message_handler(message: Message):\n    \"\"\"Обрабатывает текстовые сообщения\"\"\"\n    # Находим URL в сообщении",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "dp",
+        "kind": 5,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "dp = Dispatcher(bot)\n@dp.message_handler(CommandStart())\nasync def command_start_handler(message: Message):\n    \"\"\"Обрабатывает команду /start\"\"\"\n    await message.reply(\"Здарова сталкер!\")\n@dp.message_handler(content_types=ContentType.TEXT)\nasync def message_handler(message: Message):\n    \"\"\"Обрабатывает текстовые сообщения\"\"\"\n    # Находим URL в сообщении\n    urls = re.findall(r'https?://[^\\s]+', message.text)",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "MistralClient",
+        "kind": 6,
+        "importPath": "src.MIstral",
+        "description": "src.MIstral",
+        "peekOfCode": "class MistralClient:\n    def __init__(self, api_key: str):\n        self.api_key = api_key\n        self.url = \"https://api.mistral.ai/v1/chat/completions\"\n        self.pre_prompt = (\n            \"отвечай коротко и на русском если тебя не просят иного при написании кода \"\n            \"добавляй полноценные описания функций и классов так же комментарии \"\n            \"(если что-то уже написано в коде в виде комментария не нужно повторять это ещё раз) \"\n            \"старайся как можно точнее вести диалог не сворачивая на другую тему \"\n            \"если есть предложения по улучшению того или иного кода или текста говори их \"",
+        "detail": "src.MIstral",
+        "documentation": {}
+    },
+    {
+        "label": "encode",
+        "kind": 2,
+        "importPath": "venv.Scripts.dumppdf",
+        "description": "venv.Scripts.dumppdf",
+        "peekOfCode": "def encode(data):\n    buf = StringIO()\n    for b in data:\n        if b < 32 or 127 <= b or b in ESCAPE:\n            buf.write(f'&#{b};')\n        else:\n            buf.write(chr(b))\n    return buf.getvalue()\n# dumpxml\ndef dumpxml(out, obj, mode=None):",
+        "detail": "venv.Scripts.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "dumpxml",
+        "kind": 2,
+        "importPath": "venv.Scripts.dumppdf",
+        "description": "venv.Scripts.dumppdf",
+        "peekOfCode": "def dumpxml(out, obj, mode=None):\n    if obj is None:\n        out.write('<null />')\n        return\n    if isinstance(obj, dict):\n        out.write('<dict size=\"%d\">\\n' % len(obj))\n        for (k,v) in obj.items():\n            out.write('<key>%s</key>\\n' % k)\n            out.write('<value>')\n            dumpxml(out, v)",
+        "detail": "venv.Scripts.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "dumptrailers",
+        "kind": 2,
+        "importPath": "venv.Scripts.dumppdf",
+        "description": "venv.Scripts.dumppdf",
+        "peekOfCode": "def dumptrailers(out, doc):\n    for xref in doc.xrefs:\n        out.write('<trailer>\\n')\n        dumpxml(out, xref.trailer)\n        out.write('\\n</trailer>\\n\\n')\n    return\n# dumpallobjs\ndef dumpallobjs(out, doc, mode=None):\n    visited = set()\n    out.write('<pdf>')",
+        "detail": "venv.Scripts.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "dumpallobjs",
+        "kind": 2,
+        "importPath": "venv.Scripts.dumppdf",
+        "description": "venv.Scripts.dumppdf",
+        "peekOfCode": "def dumpallobjs(out, doc, mode=None):\n    visited = set()\n    out.write('<pdf>')\n    for xref in doc.xrefs:\n        for objid in xref.get_objids():\n            if objid in visited: continue\n            visited.add(objid)\n            try:\n                obj = doc.getobj(objid)\n                if obj is None: continue",
+        "detail": "venv.Scripts.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "dumpoutline",
+        "kind": 2,
+        "importPath": "venv.Scripts.dumppdf",
+        "description": "venv.Scripts.dumppdf",
+        "peekOfCode": "def dumpoutline(outfp, fname, objids, pagenos, password=b'',\n                dumpall=False, mode=None, extractdir=None):\n    with open(fname, 'rb') as fp:\n        parser = PDFParser(fp)\n        doc = PDFDocument(parser, password)\n        pages = dict( (page.pageid, pageno) for (pageno,page)\n                      in enumerate(PDFPage.create_pages(doc)) )\n        def resolve_dest(dest):\n            if isinstance(dest, str):\n                dest = resolve1(doc.get_dest(dest))",
+        "detail": "venv.Scripts.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "extractembedded",
+        "kind": 2,
+        "importPath": "venv.Scripts.dumppdf",
+        "description": "venv.Scripts.dumppdf",
+        "peekOfCode": "def extractembedded(outfp, fname, objids, pagenos, password=b'',\n                    dumpall=False, mode=None, extractdir=None):\n    def extract1(obj):\n        filename = os.path.basename(obj['UF'] or obj['F'])\n        fileref = obj['EF']['F']\n        fileobj = doc.getobj(fileref.objid)\n        if not isinstance(fileobj, PDFStream):\n            raise PDFValueError(\n                'unable to process PDF: reference for %r is not a PDFStream' %\n                (filename))",
+        "detail": "venv.Scripts.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "dumppdf",
+        "kind": 2,
+        "importPath": "venv.Scripts.dumppdf",
+        "description": "venv.Scripts.dumppdf",
+        "peekOfCode": "def dumppdf(outfp, fname, objids, pagenos, password=b'',\n            dumpall=False, mode=None, extractdir=None):\n    with open(fname, 'rb') as fp:\n        parser = PDFParser(fp)\n        doc = PDFDocument(parser, password)\n        if objids:\n            for objid in objids:\n                obj = doc.getobj(objid)\n                dumpxml(outfp, obj, mode=mode)\n        if pagenos:",
+        "detail": "venv.Scripts.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "venv.Scripts.dumppdf",
+        "description": "venv.Scripts.dumppdf",
+        "peekOfCode": "def main(argv):\n    import getopt\n    def usage():\n        print(f'usage: {argv[0]} [-P password] [-a] [-p pageid] [-i objid] [-o output] '\n               '[-r|-b|-t] [-T] [-O output_dir] [-d] input.pdf ...')\n        return 100\n    try:\n        (opts, args) = getopt.getopt(argv[1:], 'dP:ap:i:o:rbtTO:')\n    except getopt.GetoptError:\n        return usage()",
+        "detail": "venv.Scripts.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "ESCAPE",
+        "kind": 5,
+        "importPath": "venv.Scripts.dumppdf",
+        "description": "venv.Scripts.dumppdf",
+        "peekOfCode": "ESCAPE = set(map(ord, '&<>\"'))\ndef encode(data):\n    buf = StringIO()\n    for b in data:\n        if b < 32 or 127 <= b or b in ESCAPE:\n            buf.write(f'&#{b};')\n        else:\n            buf.write(chr(b))\n    return buf.getvalue()\n# dumpxml",
+        "detail": "venv.Scripts.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "LITERAL_FILESPEC",
+        "kind": 5,
+        "importPath": "venv.Scripts.dumppdf",
+        "description": "venv.Scripts.dumppdf",
+        "peekOfCode": "LITERAL_FILESPEC = LIT('Filespec')\nLITERAL_EMBEDDEDFILE = LIT('EmbeddedFile')\ndef extractembedded(outfp, fname, objids, pagenos, password=b'',\n                    dumpall=False, mode=None, extractdir=None):\n    def extract1(obj):\n        filename = os.path.basename(obj['UF'] or obj['F'])\n        fileref = obj['EF']['F']\n        fileobj = doc.getobj(fileref.objid)\n        if not isinstance(fileobj, PDFStream):\n            raise PDFValueError(",
+        "detail": "venv.Scripts.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "LITERAL_EMBEDDEDFILE",
+        "kind": 5,
+        "importPath": "venv.Scripts.dumppdf",
+        "description": "venv.Scripts.dumppdf",
+        "peekOfCode": "LITERAL_EMBEDDEDFILE = LIT('EmbeddedFile')\ndef extractembedded(outfp, fname, objids, pagenos, password=b'',\n                    dumpall=False, mode=None, extractdir=None):\n    def extract1(obj):\n        filename = os.path.basename(obj['UF'] or obj['F'])\n        fileref = obj['EF']['F']\n        fileobj = doc.getobj(fileref.objid)\n        if not isinstance(fileobj, PDFStream):\n            raise PDFValueError(\n                'unable to process PDF: reference for %r is not a PDFStream' %",
+        "detail": "venv.Scripts.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "venv.Scripts.pdf2txt",
+        "description": "venv.Scripts.pdf2txt",
+        "peekOfCode": "def main(argv):\n    import getopt\n    def usage():\n        print(f'usage: {argv[0]} [-P password] [-o output] [-t text|html|xml|tag]'\n               ' [-O output_dir] [-c encoding] [-s scale] [-R rotation]'\n               ' [-Y normal|loose|exact] [-p pagenos] [-m maxpages]'\n               ' [-S] [-C] [-n] [-A] [-V] [-M char_margin] [-L line_margin]'\n               ' [-W word_margin] [-F boxes_flow] [-d] input.pdf ...')\n        return 100\n    try:",
+        "detail": "venv.Scripts.pdf2txt",
+        "documentation": {}
+    }
+]
