@@ -4,7 +4,7 @@ from aiogram.dispatcher.filters import CommandStart
 from aiogram.utils import executor
 from config import load_config
 from MIstral import MistralClient
-from Filepars import Parser  
+from Filepars import Parser
 
 import logging
 import io
@@ -32,40 +32,53 @@ async def command_start_handler(message: Message):
 @dp.message_handler(content_types=ContentType.TEXT)
 async def message_handler(message: Message):
     """Обрабатывает текстовые сообщения"""
+    logger.info(f"Получено сообщение: {message.text}")
     # Находим URL в сообщении
     urls = re.findall(r'https?://[^\s]+', message.text)
-    
+
     # Если найдены ссылки
     if urls:
         # Предполагается, что первая найденная ссылка будет использоваться
         url = urls[0]
         parser = Parser(b'', 'html')  # Пустой байт-контент, тип 'html'
-        
+
         try:
             # Извлекаем текст из HTML
             html_text = await parser.read_from_html(url)  # Используем асинхронный метод
-            
+
             # Убираем ссылку из текста сообщения
             cleaned_text = message.text.replace(url, '').strip()
-            
+
             # Объединяем текст HTML с оставшимся текстом сообщения
             request_text = f"{cleaned_text}\n\n{html_text}"
 
             # Отправляем запрос в Mistral
-            response =  await mistral_client.generate_text_async(request_text)
-            await message.reply(response)  # Отправляем ответ пользователю
-            
+            response = await mistral_client.generate_text_async(request_text)
+
+            # Проверка длины ответа и разбиение на части
+            if len(response) > 4000:
+                for i in range(0, len(response), 4000):
+                    await message.reply(response[i:i + 4000])
+            else:
+                await message.reply(response)  # Отправляем ответ пользователю
+
         except Exception as e:
             logger.error(f"Ошибка при обработке HTML: {e}")
             await message.reply("Произошла ошибка при извлечении текста с веб-страницы.")
     else:
         response = await mistral_client.generate_text_async(message.text)
-        await message.reply(response)
 
+        # Проверка длины ответа и разбиение на части
+        if len(response) > 4000:
+            for i in range(0, len(response), 4000):
+                await message.reply(response[i:i + 4000])
+        else:
+            await message.reply(response)
 
 @dp.message_handler(content_types=ContentType.DOCUMENT)
 async def handle_document(message: Message):
     """Скачивание файла, его обработка и отправка в Mistral"""
+    logging.info(f"Получено сообщение: {message.document.file_name}")
     document = message.document
 
     # Получаем file_id и загружаем файл
@@ -95,7 +108,7 @@ async def handle_document(message: Message):
             text = "Неподдерживаемый формат файла."
             await message.reply(text)
             return
-        
+
         # Объединяем текст файла с текстом вопроса пользователя
         user_question = message.caption if message.caption else message.text
         request_text = f"{user_question}\n\n{text}"
@@ -109,11 +122,10 @@ async def handle_document(message: Message):
                 await message.reply(response[i:i + 4000])
         else:
             await message.reply(response)  # Отправляем ответ пользователю
-            
+
     except Exception as e:
         logger.error(f"Ошибка при чтении файла: {e}")
         await message.reply("Произошла ошибка при обработке файла.")
-
 
 if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True)
