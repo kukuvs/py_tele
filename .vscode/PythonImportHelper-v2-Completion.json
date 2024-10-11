@@ -532,7 +532,7 @@
         "kind": 5,
         "importPath": "src.main",
         "description": "src.main",
-        "peekOfCode": "bot = Bot(token=TOKEN)\ndp = Dispatcher(bot)\n@dp.message_handler(CommandStart())\nasync def command_start_handler(message: Message):\n    \"\"\"Обрабатывает команду /start\"\"\"\n    await message.reply(\"Здарова сталкер!\")\n@dp.message_handler(content_types=ContentType.TEXT)\nasync def message_handler(message: Message):\n    \"\"\"Обрабатывает текстовые сообщения\"\"\"\n    # Находим URL в сообщении",
+        "peekOfCode": "bot = Bot(token=TOKEN)\ndp = Dispatcher(bot)\n@dp.message_handler(CommandStart())\nasync def command_start_handler(message: Message):\n    \"\"\"Обрабатывает команду /start\"\"\"\n    await message.reply(\"Здарова сталкер!\")\n@dp.message_handler(content_types=ContentType.TEXT)\nasync def message_handler(message: Message):\n    \"\"\"Обрабатывает текстовые сообщения\"\"\"\n    logger.info(f\"Получено сообщение: {message.text}\")",
         "detail": "src.main",
         "documentation": {}
     },
@@ -541,7 +541,7 @@
         "kind": 5,
         "importPath": "src.main",
         "description": "src.main",
-        "peekOfCode": "dp = Dispatcher(bot)\n@dp.message_handler(CommandStart())\nasync def command_start_handler(message: Message):\n    \"\"\"Обрабатывает команду /start\"\"\"\n    await message.reply(\"Здарова сталкер!\")\n@dp.message_handler(content_types=ContentType.TEXT)\nasync def message_handler(message: Message):\n    \"\"\"Обрабатывает текстовые сообщения\"\"\"\n    # Находим URL в сообщении\n    urls = re.findall(r'https?://[^\\s]+', message.text)",
+        "peekOfCode": "dp = Dispatcher(bot)\n@dp.message_handler(CommandStart())\nasync def command_start_handler(message: Message):\n    \"\"\"Обрабатывает команду /start\"\"\"\n    await message.reply(\"Здарова сталкер!\")\n@dp.message_handler(content_types=ContentType.TEXT)\nasync def message_handler(message: Message):\n    \"\"\"Обрабатывает текстовые сообщения\"\"\"\n    logger.info(f\"Получено сообщение: {message.text}\")\n    # Находим URL в сообщении",
         "detail": "src.main",
         "documentation": {}
     },
