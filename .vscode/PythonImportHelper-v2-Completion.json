@@ -155,6 +155,42 @@
         "documentation": {}
     },
     {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
         "label": "Bot",
         "importPath": "aiogram",
         "description": "aiogram",
@@ -171,15 +207,15 @@
         "documentation": {}
     },
     {
-        "label": "types",
-        "importPath": "aiogram",
-        "description": "aiogram",
+        "label": "CommandStart",
+        "importPath": "aiogram.dispatcher.filters",
+        "description": "aiogram.dispatcher.filters",
         "isExtraImport": true,
-        "detail": "aiogram",
+        "detail": "aiogram.dispatcher.filters",
         "documentation": {}
     },
     {
-        "label": "Message",
+        "label": "ContentType",
         "importPath": "aiogram.types",
         "description": "aiogram.types",
         "isExtraImport": true,
@@ -195,19 +231,11 @@
         "documentation": {}
     },
     {
-        "label": "ContentType",
+        "label": "Message",
         "importPath": "aiogram.types",
         "description": "aiogram.types",
         "isExtraImport": true,
         "detail": "aiogram.types",
-        "documentation": {}
-    },
-    {
-        "label": "CommandStart",
-        "importPath": "aiogram.dispatcher.filters",
-        "description": "aiogram.dispatcher.filters",
-        "isExtraImport": true,
-        "detail": "aiogram.dispatcher.filters",
         "documentation": {}
     },
     {
@@ -227,14 +255,6 @@
         "documentation": {}
     },
     {
-        "label": "MistralClient",
-        "importPath": "MIstral",
-        "description": "MIstral",
-        "isExtraImport": true,
-        "detail": "MIstral",
-        "documentation": {}
-    },
-    {
         "label": "Parser",
         "importPath": "Filepars",
         "description": "Filepars",
@@ -243,21 +263,11 @@
         "documentation": {}
     },
     {
-        "label": "re",
-        "kind": 6,
+        "label": "MistralClient",
+        "importPath": "MIstral",
+        "description": "MIstral",
         "isExtraImport": true,
-        "importPath": "re",
-        "description": "re",
-        "detail": "re",
-        "documentation": {}
-    },
-    {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
+        "detail": "MIstral",
         "documentation": {}
     },
     {
@@ -492,11 +502,38 @@
         "documentation": {}
     },
     {
+        "label": "load_whitelist",
+        "kind": 2,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "def load_whitelist():\n    \"\"\"Загружает белый список пользователей из JSON-файла\"\"\"\n    if os.path.exists(WHITELIST_FILE):\n        with open(WHITELIST_FILE, 'r', encoding=\"utf-8\") as file:\n            data = json.load(file)\n            return data.get(\"whitelist\", [])\n    return []\ndef save_whitelist(whitelist):\n    \"\"\"Сохраняет белый список пользователей в JSON-файл\"\"\"\n    with open(WHITELIST_FILE, 'w', encoding=\"utf-8\") as file:",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "save_whitelist",
+        "kind": 2,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "def save_whitelist(whitelist):\n    \"\"\"Сохраняет белый список пользователей в JSON-файл\"\"\"\n    with open(WHITELIST_FILE, 'w', encoding=\"utf-8\") as file:\n        json.dump({\"whitelist\": whitelist}, file, indent=4)\ndef is_user_allowed(user_id):\n    \"\"\"Проверяет, находится ли пользователь в белом списке\"\"\"\n    whitelist = load_whitelist()\n    return str(user_id) in whitelist\n@dp.message_handler(CommandStart())\nasync def command_start_handler(message: Message):",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "is_user_allowed",
+        "kind": 2,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "def is_user_allowed(user_id):\n    \"\"\"Проверяет, находится ли пользователь в белом списке\"\"\"\n    whitelist = load_whitelist()\n    return str(user_id) in whitelist\n@dp.message_handler(CommandStart())\nasync def command_start_handler(message: Message):\n    \"\"\"Обрабатывает команду /start\"\"\"\n    if is_user_allowed(message.from_user.id):\n        await message.reply(\"Здарова сталкер!\")\n    else:",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
         "label": "logger",
         "kind": 5,
         "importPath": "src.main",
         "description": "src.main",
-        "peekOfCode": "logger = logging.getLogger(__name__)\n# Загрузка конфигурации и инициализация клиентов\nconfig = load_config('src/1.txt')\nTOKEN = config.telegram_token\nmistral_client = MistralClient(api_key=config.mistral_api_key)\n# Создаем бота и диспетчер\nbot = Bot(token=TOKEN)\ndp = Dispatcher(bot)\n@dp.message_handler(CommandStart())\nasync def command_start_handler(message: Message):",
+        "peekOfCode": "logger = logging.getLogger(__name__)\n# Загрузка конфигурации и инициализация клиентов\nconfig = load_config('./1.txt')\nTOKEN = config.telegram_token\nmistral_client = MistralClient(api_key=config.mistral_api_key)\n# Создаем бота и диспетчер\nbot = Bot(token=TOKEN)\ndp = Dispatcher(bot)\n# Путь к JSON-файлу с белым списком пользователей\nWHITELIST_FILE = './w.json'",
         "detail": "src.main",
         "documentation": {}
     },
@@ -505,7 +542,7 @@
         "kind": 5,
         "importPath": "src.main",
         "description": "src.main",
-        "peekOfCode": "config = load_config('src/1.txt')\nTOKEN = config.telegram_token\nmistral_client = MistralClient(api_key=config.mistral_api_key)\n# Создаем бота и диспетчер\nbot = Bot(token=TOKEN)\ndp = Dispatcher(bot)\n@dp.message_handler(CommandStart())\nasync def command_start_handler(message: Message):\n    \"\"\"Обрабатывает команду /start\"\"\"\n    await message.reply(\"Здарова сталкер!\")",
+        "peekOfCode": "config = load_config('./1.txt')\nTOKEN = config.telegram_token\nmistral_client = MistralClient(api_key=config.mistral_api_key)\n# Создаем бота и диспетчер\nbot = Bot(token=TOKEN)\ndp = Dispatcher(bot)\n# Путь к JSON-файлу с белым списком пользователей\nWHITELIST_FILE = './w.json'\ndef load_whitelist():\n    \"\"\"Загружает белый список пользователей из JSON-файла\"\"\"",
         "detail": "src.main",
         "documentation": {}
     },
@@ -514,7 +551,7 @@
         "kind": 5,
         "importPath": "src.main",
         "description": "src.main",
-        "peekOfCode": "TOKEN = config.telegram_token\nmistral_client = MistralClient(api_key=config.mistral_api_key)\n# Создаем бота и диспетчер\nbot = Bot(token=TOKEN)\ndp = Dispatcher(bot)\n@dp.message_handler(CommandStart())\nasync def command_start_handler(message: Message):\n    \"\"\"Обрабатывает команду /start\"\"\"\n    await message.reply(\"Здарова сталкер!\")\n@dp.message_handler(content_types=ContentType.TEXT)",
+        "peekOfCode": "TOKEN = config.telegram_token\nmistral_client = MistralClient(api_key=config.mistral_api_key)\n# Создаем бота и диспетчер\nbot = Bot(token=TOKEN)\ndp = Dispatcher(bot)\n# Путь к JSON-файлу с белым списком пользователей\nWHITELIST_FILE = './w.json'\ndef load_whitelist():\n    \"\"\"Загружает белый список пользователей из JSON-файла\"\"\"\n    if os.path.exists(WHITELIST_FILE):",
         "detail": "src.main",
         "documentation": {}
     },
@@ -523,7 +560,7 @@
         "kind": 5,
         "importPath": "src.main",
         "description": "src.main",
-        "peekOfCode": "mistral_client = MistralClient(api_key=config.mistral_api_key)\n# Создаем бота и диспетчер\nbot = Bot(token=TOKEN)\ndp = Dispatcher(bot)\n@dp.message_handler(CommandStart())\nasync def command_start_handler(message: Message):\n    \"\"\"Обрабатывает команду /start\"\"\"\n    await message.reply(\"Здарова сталкер!\")\n@dp.message_handler(content_types=ContentType.TEXT)\nasync def message_handler(message: Message):",
+        "peekOfCode": "mistral_client = MistralClient(api_key=config.mistral_api_key)\n# Создаем бота и диспетчер\nbot = Bot(token=TOKEN)\ndp = Dispatcher(bot)\n# Путь к JSON-файлу с белым списком пользователей\nWHITELIST_FILE = './w.json'\ndef load_whitelist():\n    \"\"\"Загружает белый список пользователей из JSON-файла\"\"\"\n    if os.path.exists(WHITELIST_FILE):\n        with open(WHITELIST_FILE, 'r', encoding=\"utf-8\") as file:",
         "detail": "src.main",
         "documentation": {}
     },
@@ -532,7 +569,7 @@
         "kind": 5,
         "importPath": "src.main",
         "description": "src.main",
-        "peekOfCode": "bot = Bot(token=TOKEN)\ndp = Dispatcher(bot)\n@dp.message_handler(CommandStart())\nasync def command_start_handler(message: Message):\n    \"\"\"Обрабатывает команду /start\"\"\"\n    await message.reply(\"Здарова сталкер!\")\n@dp.message_handler(content_types=ContentType.TEXT)\nasync def message_handler(message: Message):\n    \"\"\"Обрабатывает текстовые сообщения\"\"\"\n    logger.info(f\"Получено сообщение: {message.text}\")",
+        "peekOfCode": "bot = Bot(token=TOKEN)\ndp = Dispatcher(bot)\n# Путь к JSON-файлу с белым списком пользователей\nWHITELIST_FILE = './w.json'\ndef load_whitelist():\n    \"\"\"Загружает белый список пользователей из JSON-файла\"\"\"\n    if os.path.exists(WHITELIST_FILE):\n        with open(WHITELIST_FILE, 'r', encoding=\"utf-8\") as file:\n            data = json.load(file)\n            return data.get(\"whitelist\", [])",
         "detail": "src.main",
         "documentation": {}
     },
@@ -541,7 +578,16 @@
         "kind": 5,
         "importPath": "src.main",
         "description": "src.main",
-        "peekOfCode": "dp = Dispatcher(bot)\n@dp.message_handler(CommandStart())\nasync def command_start_handler(message: Message):\n    \"\"\"Обрабатывает команду /start\"\"\"\n    await message.reply(\"Здарова сталкер!\")\n@dp.message_handler(content_types=ContentType.TEXT)\nasync def message_handler(message: Message):\n    \"\"\"Обрабатывает текстовые сообщения\"\"\"\n    logger.info(f\"Получено сообщение: {message.text}\")\n    # Находим URL в сообщении",
+        "peekOfCode": "dp = Dispatcher(bot)\n# Путь к JSON-файлу с белым списком пользователей\nWHITELIST_FILE = './w.json'\ndef load_whitelist():\n    \"\"\"Загружает белый список пользователей из JSON-файла\"\"\"\n    if os.path.exists(WHITELIST_FILE):\n        with open(WHITELIST_FILE, 'r', encoding=\"utf-8\") as file:\n            data = json.load(file)\n            return data.get(\"whitelist\", [])\n    return []",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "WHITELIST_FILE",
+        "kind": 5,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "WHITELIST_FILE = './w.json'\ndef load_whitelist():\n    \"\"\"Загружает белый список пользователей из JSON-файла\"\"\"\n    if os.path.exists(WHITELIST_FILE):\n        with open(WHITELIST_FILE, 'r', encoding=\"utf-8\") as file:\n            data = json.load(file)\n            return data.get(\"whitelist\", [])\n    return []\ndef save_whitelist(whitelist):\n    \"\"\"Сохраняет белый список пользователей в JSON-файл\"\"\"",
         "detail": "src.main",
         "documentation": {}
     },
